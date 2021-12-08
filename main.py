@@ -18,6 +18,7 @@ if base2 == 6:
     place = len(str(result)) - 1
     position = 1
     word = []
+    numbers = []
     mo = {0: "mo"}
     no = {1: "no"}
     po = {2: "po"}
@@ -35,5 +36,6 @@ if base2 == 6:
     for i in range(len(str(result))):
         value = int(str(result)[place]) * position
         print(value)
+        numbers.append(value)
         place = place - 1
         position = position * 10
